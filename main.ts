@@ -13,19 +13,19 @@ input.onButtonPressed(Button.A, function () {
     music.startMelody(music.builtInMelody(Melodies.Baddy), MelodyOptions.Forever)
 })
 input.onSound(DetectedSound.Loud, function () {
-	
+    basic.showLeds(`
+        . . # . .
+        . . # # .
+        . . # . #
+        . . # . .
+        . . # . .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showNumber(input.lightLevel())
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . . # . .
-        . . # . .
-        `)
+	
 })
 basic.forever(function () {
 	
